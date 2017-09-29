@@ -1,0 +1,32 @@
+.letter
+{
+	font-size: 1.9vw;
+}
+
+.cont
+{
+	float: left; display: inline; width:80%; height: 30%;
+	font-size: 5.9vw;
+	border: 5px solid black;
+	border-radius:20px;
+	box-shadow: 2px 10px 2px #777777;
+	padding-bottom: 1vw;
+	padding-top: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #778899;
+	color: white;
+	width: 30%;
+	height: 30%;
+	text-align: center;
+	margin: 0 auto .3em;
+}
+h1
+{
+	font-size: 5.9vw;
+	text-align: center;
+}
+p
+{
+	text-align: center;
+}
