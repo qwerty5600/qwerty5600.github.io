@@ -70,7 +70,7 @@ function hangman_display()
 	currentDisplay = display;
 	if(currentDisplay == secret)
 	{
-		alert.("You Won!");
+		alert("You Won!");
 	}
 	document.getElementById("display").innerHTML = currentDisplay;
 }
