@@ -8,7 +8,7 @@ var wordChoices = [ ["TV Shows","THE-BIG-BANG-THEORY", "GOLDBERGS", "MODERN-FAMI
 					["Favorite Movies", "MATRIX", "MISSION-IMPOSSIBLE", "JASON-BOURNE", "SUICIDE-SQUAD", "HUNGER-GAMES", "PULP-FICTION"],
 					["Colors", "RED", "BLUE", "YELLOW", "GREEN", "PURPLE", "RED-ORANGE"],
 					["Countries", "FRANCE", "CHINA", "MEXICO", "UNITED-STATES", "CANADA", "EYGPT"],
-					["SPORTS", "SOCCER", "FOOT-BALL", "BASEBALL", "TENNIS", "RUGBY", "GOLF"]]
+					["Sports", "SOCCER", "FOOT-BALL", "BASEBALL", "TENNIS", "RUGBY", "GOLF"]]
 var secret = "";
 
 var wrongAnswers = 0;
