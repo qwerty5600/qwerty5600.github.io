@@ -1,12 +1,14 @@
 var hangmanDisplay = "";
 
-var wordChoices = [ ["TV Shows","THE-BIG-BANG-THEORY", "GOLDBERGS", "MODERN-FAMILY","FRIENDS","BLACKISH"],
-					["NFL Teams", "STEELERS", "PACKERS", "PATRIOTS", "COWBOYS", "REDSKINS"],
-					["Computer Companies", "DELL", "MICROSOFT", "SONY", "SAMSUNG", "TOSHIBA"],
-					["Animals", "CHEETAH", "LEOPARD", "BEAR", "EAGLE", "LION"],
-					["Food", "PIZZA", "STEAK", "PASTA", "HOT-DOGS", "CUCUMBER"],
-					["Favorite Movies", "MATRIX", "MISSION-IMPOSSIBLE", "JASON-BOURNE", "SUICIDE-SQUAD", "HUNGER-GAMES"],
-					["Colors", "RED", "BLUE", "YELLOW", "GREEN", "PURPLE"]]
+var wordChoices = [ ["TV Shows","THE-BIG-BANG-THEORY", "GOLDBERGS", "MODERN-FAMILY","FRIENDS","BLACKISH", "THE-SOPRANOS"],
+					["NFL Teams", "STEELERS", "PACKERS", "PATRIOTS", "COWBOYS", "REDSKINS", "PANTHERS"],
+					["Computer Companies", "DELL", "MICROSOFT", "SONY", "SAMSUNG", "TOSHIBA","ACER"],
+					["Animals", "CHEETAH", "LEOPARD", "BEAR", "EAGLE", "LION", "WOLF"],
+					["Food", "PIZZA", "STEAK", "PASTA", "HOT-DOGS", "CUCUMBER","BACON"],
+					["Favorite Movies", "MATRIX", "MISSION-IMPOSSIBLE", "JASON-BOURNE", "SUICIDE-SQUAD", "HUNGER-GAMES", "PULP-FICTION"],
+					["Colors", "RED", "BLUE", "YELLOW", "GREEN", "PURPLE", "RED-ORANGE"],
+					["Countries", "FRANCE", "CHINA", "MEXICO", "UNITED-STATES", "CANADA", "EYGPT"],
+					["SPORTS", "SOCCER", "FOOT-BALL", "BASEBALL", "TENNIS", "RUGBY", "GOLF"]]
 var secret = "";
 
 var wrongAnswers = 0;
