@@ -36,8 +36,8 @@ var AlphabetActive =
 function newGame()
 {
 	rightAnswer = 0;
-	var row = Math.floor(Math.random()*7);  //1 more than the number of rows
-	var col = Math.floor(Math.random()*5)+1;  //the number of columns
+	var row = Math.floor(Math.random()*9);  //1 more than the number of rows
+	var col = Math.floor(Math.random()*6)+1;  //the number of columns
 	guesses = [];
 	console.log("Category: " + wordChoices[row][0]);
 	document.getElementById("category").innerHTML = "Category: " + wordChoices[row][0];
