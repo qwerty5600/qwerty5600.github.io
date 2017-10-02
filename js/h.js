@@ -48,33 +48,37 @@ function newGame()
 function hangman_display()
 {
 	var display = "";
+	var screenDisplay = "";
 	for (var i = 0; i < secret.length; i++)
 	{
 		if (guesses.includes(secret[i]))
 		{
 			display = display + secret[i];
+			screenDisplay = screenDisplay + secret[i];
 		}
 		else
 		{
 			if (secret[i] === "-")
 			{
 				display = display + "-";
+				screenDisplay = screenDisplay + "-";
 			}
 			else
 			{
 				display = display + "_";
+				screenDisplay = screenDisplay + "_";
 			}
 		}
-	display = display + " ";
+		screenDisplay = screenDisplay + " ";
 	}
 	currentDisplay = display;
+	document.getElementById("display").innerHTML = screenDisplay;
 	if(currentDisplay == secret)
 	{
-		alert("You Won!");
+		alert("You got " + secret + ".  You Won!");
+		resetGame();
 	}
-	document.getElementById("display").innerHTML = currentDisplay;
 }
-
 
 function resetGame()
 {
@@ -92,6 +96,17 @@ function resetGame()
         true, true, true, true, true, true, true];
 	document.getElementById("myimage").src = img[wrongAnswers];
 }
+function checkLetter(letter)
+{
+	if (secret.includes(letter))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 		
 function clickOnLetter(letter)
 {
@@ -101,11 +116,16 @@ function clickOnLetter(letter)
 		document.getElementById("ltr" + letter).innerHTML = "_";
 		guesses.push(letter);
 		console.log(guesses);
-		if (wrongAnswers < img.length)
-		{
-			//wrongAnswers++;
-			document.getElementById("myimage").src = img[wrongAnswers];
-		}
+		if(checkLetter(letter))
+			{
+				hangman_display();
+			}
+			else
+			{
+				wrongAnswers++;
+				document.getElementById("myimage").src = img[wrongAnswers];
+				hangman_display();
+			}
 		if (wrongAnswers > 6)
 		{
 			alert("GameOver");
