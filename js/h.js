@@ -17,6 +17,10 @@ var guesses = [];
 
 var currentDisplay = "";
 
+var wins = 0;
+
+var losses = 0;
+
 var img = ["images/imagezero.png", "images/imageone.png", "images/imagetwo.png",
 	"images/imagethree.png", "images/imagefour.png", "images/imagefive.png",
 	"images/imagesix.png", "images/imageseven.png"]
@@ -78,6 +82,8 @@ function hangman_display()
 	if(currentDisplay == secret)
 	{
 		alert("You got " + secret + ".  You Won!");
+		wins++;
+		document.getElementById("wins").innerHTML = "Wins: " + wins;
 		resetGame();
 	}
 }
@@ -131,6 +137,8 @@ function clickOnLetter(letter)
 		if (wrongAnswers > 6)
 		{
 			alert("GameOver");
+			losses++;
+			document.getElementById("losses").innerHTML = "Losses: " + losses;
 			resetGame();
 		}
 	}
